@@ -3,23 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>האתר בבניה | Lowgo    </title>
-  <link rel="stylesheet" href="styles.css">
+  <title>האתר בבניה | Lowgo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Heebo', Arial, sans-serif;
+      background: linear-gradient(135deg, #f8fafc 0%, #fceabb 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+      padding: 2.5rem 2rem;
+      max-width: 350px;
+      width: 90vw;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2rem;
+      transition: box-shadow 0.2s;
+    }
+    .container:hover {
+      box-shadow: 0 12px 40px rgba(0,0,0,0.20);
+    }
+    .icon svg {
+      width: 90px;
+      height: 90px;
+      margin-bottom: 0.5rem;
+      /* Add a soft drop shadow to SVG */
+      filter: drop-shadow(0 2px 8px rgba(255,166,41,0.18));
+    }
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 700;
+      margin: 0;
+      color: #333;
+      letter-spacing: 0.02em;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #ffa629;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.2rem 0.5rem;
+        max-width: 98vw;
+      }
+      h1 {
+        font-size: 1.4rem;
+      }
+      .icon svg {
+        width: 70px;
+        height: 70px;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <div class="icon">
       <!-- אייקון בנייה SVG -->
-      <svg width="100" height="100" viewBox="0 0 24 24" fill="none">
+      <svg width="90" height="90" viewBox="0 0 24 24" fill="none">
         <circle cx="12" cy="12" r="10" stroke="#ffa629" stroke-width="2"/>
         <rect x="7" y="13" width="10" height="6" rx="2" fill="#ffa629"/>
         <rect x="9" y="7" width="6" height="6" rx="3" fill="#ffa629"/>
       </svg>
     </div>
     <h1>האתר בבניה</h1>
-    <p>Lowgo  - עיצוב גרפי ומיתוג</p>
+    <p>Lowgo - עיצוב גרפי ומיתוג</p>
   </div>
 </body>
 </html>
